@@ -3,9 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Add product</title>
-    <link rel="stylesheet" href="/css/product.css" />
-    <link rel="stylesheet" href="/css/main.css" />
+    <title>Contact Us</title>
+     <link rel="stylesheet" href="/css/main.css">
   </head>
   <body>
     <header class="main-header">
@@ -20,13 +19,17 @@
       </nav>
     </header>
     <main>
-      <form class="product-form" action="/add-product" method="POST">
-        <div class="form-control">
-          <label for="title">Title</label>
-          <input type="text" name="title" />
-        </div>
-        <button type="submit">Add Product</button>
-      </form>
+       <form action="/contactus" method="POST">
+         <div class="user-name">
+            <label for="userName">Name:</label>
+            <input type="text" name="userName">
+         </div>
+         <div class="user-email">
+            <label for="user-email">Email:</label>
+            <input type="email" name="user-email">
+         </div>
+         <button type="submit">submit</button>
+       </form>
     </main>
   </body>
 </html>
